@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edtMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:gravity="top"
+                android:hint="Write here"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="16dp"
+                android:scrollHorizontally="false" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_save_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnAddPic"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_insert_photo_black_18dp" />
+
+
+        <ImageButton
+            android:id="@+id/btnDel"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_delete_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_share_black_18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

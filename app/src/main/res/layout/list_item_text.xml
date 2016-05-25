@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_item_bg"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/frog"
+                android:backgroundTint="@color/colorPrimarySoft" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginRight="48dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:freezesText="true"
+                    android:maxLines="1"
+                    android:text="Name Name Name Name Name Name Name Name Name Name Name Name"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:freezesText="true"
+                    android:maxLines="1"
+                    android:text="Length Date Time Storage bla bla bla"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_moreSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#616161"
+            android:drawableRight="@drawable/ic_more_vert_black_24dp"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:minHeight="24dp"
+            android:minWidth="24dp"
+            android:padding="15dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_item"
+        android:background="@color/view_divider_color" />
+
+</RelativeLayout>

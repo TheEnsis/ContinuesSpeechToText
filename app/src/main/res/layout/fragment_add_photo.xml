@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+
+        <uk.co.deanwild.flowtextview.FlowTextView
+            android:id="@+id/flowTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/transparent"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/photoAdded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:foregroundGravity="right"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_launcher" />
+
+            </RelativeLayout>
+
+        </uk.co.deanwild.flowtextview.FlowTextView>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btnTopLeft"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnTop"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnTopRight"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnCenterLeft"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnCenter"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnCenterRight"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnAddPicture"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_add_a_photo_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnDelPicture"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_delete_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/btnSetPicLoc"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_smartphone_black_18dp" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnShare"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:src="@drawable/ic_share_black_18dp" />-->
+
+    </LinearLayout>
+
+</LinearLayout>
